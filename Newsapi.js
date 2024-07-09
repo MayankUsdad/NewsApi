@@ -4,7 +4,7 @@ function Newsapi(){
     const[data,setData] = useState([]);
 
     useEffect(()=> {
-        fetch("https://newsapi.org/v2/everything?q=tesla&from=2024-06-08&sortBy=publishedAt&apiKey=7a0ec8ba922046f9a72ceac876fa73b6")
+        fetch("https://newsapi.org")
         .then(response => response.json())
         .then(data =>setData(data.articles));
     });
